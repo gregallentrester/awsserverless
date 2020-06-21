@@ -1,0 +1,11 @@
+#!/bin/bash -p
+
+if [[ -n "$1" ]] ;then
+  export LBL="$1"
+else
+  export LBL="$PWD"
+fi
+
+export PROMPT_COMMAND='echo -ne "\033]0;  $(ipconfig getifaddr en0) - $LBL   \007"'
+
+

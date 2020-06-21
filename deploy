@@ -1,5 +1,5 @@
 #!/bin/bash -p
 
-caption "ßash script deploy() - serverless deploy"
+. caption "ßash script deploy() - serverless deploy"
 
 serverless deploy
